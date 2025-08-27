@@ -1,0 +1,71 @@
+{
+  "type": "parameter_sweep",
+  "timestamp": "2025-08-14T09:39:43.267956",
+  "duration": 3.431317,
+  "parameters": {
+    "configs": [
+      "synthetic"
+    ],
+    "test_types": [
+      "global",
+      "global_cond",
+      "local_cond"
+    ],
+    "concept_types": [
+      "importance"
+    ]
+  },
+  "results": [
+    {
+      "status": "error",
+      "duration": 1.126111,
+      "error": "Command failed with return code 1",
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"test.py\", line 8, in <module>\n    import configs\n  File \"/root/ariel/projects/IBYDMT_proj/IBYDMT/configs/__init__.py\", line 1, in <module>\n    from configs import awa2, cub, imagenette, synthetic\n  File \"/root/ariel/projects/IBYDMT_proj/IBYDMT/configs/awa2.py\", line 3, in <module>\n    from ibydmt.utils.config import Config, register_config\n  File \"/root/ariel/projects/IBYDMT_proj/IBYDMT/ibydmt/__init__.py\", line 1, in <module>\n    from ibydmt.tester import ConceptTester\n  File \"/root/ariel/projects/IBYDMT_proj/IBYDMT/ibydmt/tester.py\", line 9, in <module>\n    from joblib import Parallel, delayed\nModuleNotFoundError: No module named 'joblib'\n",
+      "config_name": "synthetic",
+      "test_type": "global",
+      "concept_type": "importance"
+    },
+    {
+      "status": "error",
+      "duration": 1.166393,
+      "error": "Command failed with return code 1",
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"test.py\", line 8, in <module>\n    import configs\n  File \"/root/ariel/projects/IBYDMT_proj/IBYDMT/configs/__init__.py\", line 1, in <module>\n    from configs import awa2, cub, imagenette, synthetic\n  File \"/root/ariel/projects/IBYDMT_proj/IBYDMT/configs/awa2.py\", line 3, in <module>\n    from ibydmt.utils.config import Config, register_config\n  File \"/root/ariel/projects/IBYDMT_proj/IBYDMT/ibydmt/__init__.py\", line 1, in <module>\n    from ibydmt.tester import ConceptTester\n  File \"/root/ariel/projects/IBYDMT_proj/IBYDMT/ibydmt/tester.py\", line 9, in <module>\n    from joblib import Parallel, delayed\nModuleNotFoundError: No module named 'joblib'\n",
+      "config_name": "synthetic",
+      "test_type": "global_cond",
+      "concept_type": "importance"
+    },
+    {
+      "status": "error",
+      "duration": 1.138533,
+      "error": "Command failed with return code 1",
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"test.py\", line 8, in <module>\n    import configs\n  File \"/root/ariel/projects/IBYDMT_proj/IBYDMT/configs/__init__.py\", line 1, in <module>\n    from configs import awa2, cub, imagenette, synthetic\n  File \"/root/ariel/projects/IBYDMT_proj/IBYDMT/configs/awa2.py\", line 3, in <module>\n    from ibydmt.utils.config import Config, register_config\n  File \"/root/ariel/projects/IBYDMT_proj/IBYDMT/ibydmt/__init__.py\", line 1, in <module>\n    from ibydmt.tester import ConceptTester\n  File \"/root/ariel/projects/IBYDMT_proj/IBYDMT/ibydmt/tester.py\", line 9, in <module>\n    from joblib import Parallel, delayed\nModuleNotFoundError: No module named 'joblib'\n",
+      "config_name": "synthetic",
+      "test_type": "local_cond",
+      "concept_type": "importance"
+    }
+  ],
+  "analysis": {
+    "total_tests": 3,
+    "successful": 0,
+    "failed": 3,
+    "timeouts": 0,
+    "success_rate": 0.0,
+    "failure_rate": 1.0,
+    "timeout_rate": 0.0,
+    "config_stats": {
+      "synthetic": {
+        "total": 3,
+        "success": 0,
+        "durations": [],
+        "success_rate": 0.0,
+        "avg_duration": null
+      }
+    },
+    "common_errors": {
+      "Command failed with return code 1": 3
+    }
+  }
+}

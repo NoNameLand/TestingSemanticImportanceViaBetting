@@ -1,0 +1,9 @@
+Requirement already satisfied: torch in /usr/lib/python3.8/site-packages (1.7.1)
+Requirement already satisfied: torchvision in /usr/lib/python3.8/site-packages (0.8.2)
+Collecting torchaudio
+  Downloading torchaudio-2.4.1-cp38-cp38-manylinux1_x86_64.whl (3.4 MB)
+Requirement already satisfied: numpy in /usr/local/lib/python3.8/dist-packages (from torch) (1.24.4)
+Requirement already satisfied: typing-extensions in /usr/local/lib/python3.8/dist-packages (from torch) (4.13.2)
+Requirement already satisfied: pillow>=4.1.1 in /usr/lib/python3/dist-packages (from torchvision) (7.0.0)
+Installing collected packages: torchaudio
+Successfully installed torchaudio-2.4.1

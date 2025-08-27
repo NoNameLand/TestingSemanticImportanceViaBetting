@@ -1,0 +1,101 @@
+ROBUST LINEAR IMPORTANCE TESTING REPORT
+============================================================
+
+TRUE IMPORTANT CONCEPTS: [1, 3, 6]
+
+SINGLE CONCEPT RESULTS (E-VALUE ACCUMULATION):
+----------------------------------------
+Rejected concepts: [0, 1, 2, 6]
+True positives: 2/3
+False positives: 2
+
+Concept 0  : REJECTED (E=102.005, step=98)
+Concept 1 ★: REJECTED (E=109.382, step=32)
+Concept 2  : REJECTED (E=103.829, step=96)
+Concept 3 ★: NOT REJECTED (E=1.338, step=N/A)
+Concept 4  : NOT REJECTED (E=1.126, step=N/A)
+Concept 5  : NOT REJECTED (E=1.928, step=N/A)
+Concept 6 ★: REJECTED (E=100.267, step=32)
+Concept 7  : NOT REJECTED (E=5.348, step=N/A)
+
+ROBUST INDIVIDUAL CONCEPT DISTRIBUTION RESULTS (HOEFFDING):
+------------------------------------------------------------
+
+Concept 0:
+  Concept index: 0
+  Is true concept: False
+  Empirical probability: 0.000
+  95% Confidence interval: [0.000, 0.192]
+  90% of mass is important: False
+  Hoeffding epsilon: 0.192
+  Samples used: 50
+
+Concept 1:
+  Concept index: 1
+  Is true concept: True
+  Empirical probability: 0.620
+  95% Confidence interval: [0.428, 0.812]
+  90% of mass is important: False
+  Hoeffding epsilon: 0.192
+  Samples used: 50
+
+Concept 2:
+  Concept index: 2
+  Is true concept: False
+  Empirical probability: 0.000
+  95% Confidence interval: [0.000, 0.192]
+  90% of mass is important: False
+  Hoeffding epsilon: 0.192
+  Samples used: 50
+
+Concept 3:
+  Concept index: 3
+  Is true concept: True
+  Empirical probability: 0.000
+  95% Confidence interval: [0.000, 0.192]
+  90% of mass is important: False
+  Hoeffding epsilon: 0.192
+  Samples used: 50
+
+Concept 4:
+  Concept index: 4
+  Is true concept: False
+  Empirical probability: 0.000
+  95% Confidence interval: [0.000, 0.192]
+  90% of mass is important: False
+  Hoeffding epsilon: 0.192
+  Samples used: 50
+
+Concept 5:
+  Concept index: 5
+  Is true concept: False
+  Empirical probability: 0.000
+  95% Confidence interval: [0.000, 0.192]
+  90% of mass is important: False
+  Hoeffding epsilon: 0.192
+  Samples used: 50
+
+Concept 6:
+  Concept index: 6
+  Is true concept: True
+  Empirical probability: 0.520
+  95% Confidence interval: [0.328, 0.712]
+  90% of mass is important: False
+  Hoeffding epsilon: 0.192
+  Samples used: 50
+
+Concept 7:
+  Concept index: 7
+  Is true concept: False
+  Empirical probability: 0.000
+  95% Confidence interval: [0.000, 0.192]
+  90% of mass is important: False
+  Hoeffding epsilon: 0.192
+  Samples used: 50
+
+SUMMARY:
+--------------------
+• E-value accumulation tests individual concept importance
+• Hoeffding inequality provides confidence bounds on concept distributions
+• 90% mass threshold determines if concept distribution is robustly important
+• True concept combinations should exceed mass threshold with high confidence

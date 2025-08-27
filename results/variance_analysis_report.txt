@@ -1,0 +1,137 @@
+CONCEPT VARIANCE ANALYSIS REPORT
+============================================================
+
+TRUE IMPORTANT CONCEPTS: [1, 3, 6]
+VARIANCE RANGE: 0.010 to 10.000
+NUMBER OF VARIANCE LEVELS: 20
+
+ANALYSIS METHODOLOGY:
+------------------------------
+• For each concept and each variance level:
+  1. Add Gaussian noise with specified variance to concept values
+  2. Test robust importance using Hoeffding inequality
+  3. Estimate probability that 90% of concept mass is important
+  4. Calculate 95% confidence bounds using Hoeffding inequality
+
+DETAILED RESULTS BY CONCEPT:
+----------------------------------------
+
+CONCEPT 0 (False concept):
+------------------------------
+Probability range: 0.000 to 0.000
+Lower bound range: 0.000 to 0.000
+Mass important in 0/20 variance levels
+No variance levels achieved 90% mass importance
+
+Key variance levels:
+  Variance 0.010: prob=0.000, CI=[0.000,0.136], important=False
+  Variance 0.062: prob=0.000, CI=[0.000,0.136], important=False
+  Variance 0.379: prob=0.000, CI=[0.000,0.136], important=False
+  Variance 2.336: prob=0.000, CI=[0.000,0.136], important=False
+  Variance 10.000: prob=0.000, CI=[0.000,0.136], important=False
+
+CONCEPT 1 ★ (TRUE CONCEPT):
+------------------------------
+Probability range: 0.000 to 1.000
+Lower bound range: 0.000 to 0.864
+Mass important in 9/20 variance levels
+Optimal variance range: 0.010 to 0.183
+
+Key variance levels:
+  Variance 0.010: prob=1.000, CI=[0.864,1.000], important=True
+  Variance 0.062: prob=0.980, CI=[0.844,1.000], important=True
+  Variance 0.379: prob=0.580, CI=[0.444,0.716], important=False
+  Variance 2.336: prob=0.000, CI=[0.000,0.136], important=False
+  Variance 10.000: prob=0.000, CI=[0.000,0.136], important=False
+
+CONCEPT 2 (False concept):
+------------------------------
+Probability range: 0.000 to 0.000
+Lower bound range: 0.000 to 0.000
+Mass important in 0/20 variance levels
+No variance levels achieved 90% mass importance
+
+Key variance levels:
+  Variance 0.010: prob=0.000, CI=[0.000,0.136], important=False
+  Variance 0.062: prob=0.000, CI=[0.000,0.136], important=False
+  Variance 0.379: prob=0.000, CI=[0.000,0.136], important=False
+  Variance 2.336: prob=0.000, CI=[0.000,0.136], important=False
+  Variance 10.000: prob=0.000, CI=[0.000,0.136], important=False
+
+CONCEPT 3 ★ (TRUE CONCEPT):
+------------------------------
+Probability range: 0.000 to 0.000
+Lower bound range: 0.000 to 0.000
+Mass important in 0/20 variance levels
+No variance levels achieved 90% mass importance
+
+Key variance levels:
+  Variance 0.010: prob=0.000, CI=[0.000,0.136], important=False
+  Variance 0.062: prob=0.000, CI=[0.000,0.136], important=False
+  Variance 0.379: prob=0.000, CI=[0.000,0.136], important=False
+  Variance 2.336: prob=0.000, CI=[0.000,0.136], important=False
+  Variance 10.000: prob=0.000, CI=[0.000,0.136], important=False
+
+CONCEPT 4 (False concept):
+------------------------------
+Probability range: 0.000 to 0.000
+Lower bound range: 0.000 to 0.000
+Mass important in 0/20 variance levels
+No variance levels achieved 90% mass importance
+
+Key variance levels:
+  Variance 0.010: prob=0.000, CI=[0.000,0.136], important=False
+  Variance 0.062: prob=0.000, CI=[0.000,0.136], important=False
+  Variance 0.379: prob=0.000, CI=[0.000,0.136], important=False
+  Variance 2.336: prob=0.000, CI=[0.000,0.136], important=False
+  Variance 10.000: prob=0.000, CI=[0.000,0.136], important=False
+
+CONCEPT 5 (False concept):
+------------------------------
+Probability range: 0.000 to 0.010
+Lower bound range: 0.000 to 0.000
+Mass important in 0/20 variance levels
+No variance levels achieved 90% mass importance
+
+Key variance levels:
+  Variance 0.010: prob=0.010, CI=[0.000,0.146], important=False
+  Variance 0.062: prob=0.010, CI=[0.000,0.146], important=False
+  Variance 0.379: prob=0.000, CI=[0.000,0.136], important=False
+  Variance 2.336: prob=0.000, CI=[0.000,0.136], important=False
+  Variance 10.000: prob=0.000, CI=[0.000,0.136], important=False
+
+CONCEPT 6 ★ (TRUE CONCEPT):
+------------------------------
+Probability range: 0.000 to 0.880
+Lower bound range: 0.000 to 0.744
+Mass important in 4/20 variance levels
+Optimal variance range: 0.010 to 0.030
+
+Key variance levels:
+  Variance 0.010: prob=0.880, CI=[0.744,1.000], important=True
+  Variance 0.062: prob=0.790, CI=[0.654,0.926], important=False
+  Variance 0.379: prob=0.330, CI=[0.194,0.466], important=False
+  Variance 2.336: prob=0.000, CI=[0.000,0.136], important=False
+  Variance 10.000: prob=0.000, CI=[0.000,0.136], important=False
+
+CONCEPT 7 (False concept):
+------------------------------
+Probability range: 0.000 to 0.000
+Lower bound range: 0.000 to 0.000
+Mass important in 0/20 variance levels
+No variance levels achieved 90% mass importance
+
+Key variance levels:
+  Variance 0.010: prob=0.000, CI=[0.000,0.136], important=False
+  Variance 0.062: prob=0.000, CI=[0.000,0.136], important=False
+  Variance 0.379: prob=0.000, CI=[0.000,0.136], important=False
+  Variance 2.336: prob=0.000, CI=[0.000,0.136], important=False
+  Variance 10.000: prob=0.000, CI=[0.000,0.136], important=False
+
+SUMMARY INSIGHTS:
+--------------------
+• Average correlation between log(variance) and probability for true concepts: nan
+• Negative correlation indicates probability decreases as variance increases (expected)
+• Positive correlation may indicate robustness or non-linear effects
+• 2/8 concepts achieve 90% mass importance at some variance level
+• 2/3 true concepts achieve 90% mass importance
