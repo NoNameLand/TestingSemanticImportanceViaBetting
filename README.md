@@ -475,4 +475,4 @@ else:
 3. Explore the integration library for more advanced usage
 4. Integrate the testing capabilities into your own projects
 
-The integration scripts are designed to be flexible and extensible, allowing you to easily incorporate IBYDMT testing into your machine learning workflows.
+We hope you find this repositroy useful. 
